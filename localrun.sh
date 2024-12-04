@@ -9,6 +9,7 @@ docker run -d \
   -p 3001:3001 \
   -v /var/run/docker.sock:/var/run/docker.sock\
   -v /root/casaos-in-docker/config/:/config \
+  -v /sbin/modprobe:/sbin/modprobe \
   -v /sys/fs/cgroup:/sys/fs/cgroup:rw \
   --cgroupns=host \
   --privileged \
